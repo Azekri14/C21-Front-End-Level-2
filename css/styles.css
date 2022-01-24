@@ -15,6 +15,25 @@ html{
     line-height:1.8;
 }
 
+body{
+    background-color:#cccccc;
+}
+
+.wrapper{
+    background-color: white;
+    margin:0 auto;
+    max-width: 1795px;
+}
+
+header{
+    height: 90px;
+    display: flex;
+}
+
+.logo{
+    
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: "Karla", sans-serif;
     font-style:normal;
@@ -43,7 +62,7 @@ a{
     font-size:14px;
     color:#ca404f;
     line-height:1.4;
-    text-decoration: non4;
+    text-decoration:none;
 }
 
 button{

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="js/functions.js" defer></script>
+</head>
+<body>
+    
+    <div id="logo">
+        <img src="images/logo.svg">
+    </div>
+    <button onclick="document.getElementById('logo').innerHTML = 'Hier stond een logo';">Vervang het logo</button>
+    
+    <div class="item" id="item-1">
+        <img src="images/item-2.png">
+    </div>
+    <button onclick="document.getElementById('item').innerHTML = 'Hier stond item 1';">Vervang het item</button>
+    
+    <div class="item" id="item-2">
+        <img src="images/item-2.png">
+    </div>
+    <button onclick ="document.getElementById('item').innerHTML = 'Hier stond item 2';">Vervang het item</button>
+
+    <div class="voorbeeld" id="voorbeeld-1">
+        <img src="images/item-3.png">
+    </div>
+    <button onclick ="document.getElementById('voorbeeld').innerHTML = 'Hier stond voorbeeld 1';">Vervang het voorbeeld</button>
+
+    <div class="voorbeeld" id="voorbeeld-2">
+        <img src="images/item-4.png">
+    </div>
+    <button onclick ="document.getElementById('voorbeeld').innerHTML = 'Hier stond een voorbeeld 2';">Vervang het voorbeeld</button>
+
+    <div id="vervang-body">Vervang gehele body</div>
+    <button onclick="document.querySelector('vervang-body').innerHTML= 'De body is tijdelijk verandert';">Vervang de body</button>
+
+
+</body>
+</html>

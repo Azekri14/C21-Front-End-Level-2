@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--hier een link naar de stylesheet, style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--hier een link naar script.js -->
+    <script src="js/script.js" defer></script>
+    <!-- waarom gebruiken we hier het attribute defer? Dit attribute zorgt ervoor dat de JavaScript code pas geladen wordt nadat het volledige HTML door de browser geladen is-->
+</head>
+<body>
+
+    <div>
+        <button onclick="getName('Mohamed');">klik op de button</button> 
+        <!-- vul eens je eigen naam in waar nu staat: vul je naam in hier, echt doen!, wat gebeurd er dan? Als popup melding komt nu mijn naam. -->
+    </div>
+
+    <div>
+        <p>Klik een paar keer op het plaatje hieronder</p>
+        <img id="hide" onclick="hideMe();" src="images/item-1.png">
+        <!-- Welke functie wordt hierboven aangeroepen? hideMe() -->
+        <img id="show" onclick="show();" src="images/item-2.png">
+        <!-- Welke functie wordt hierboven aangeroepen? show() -->
+    </div>
+
+    <div>
+        <p class="som">als ik op de button hieronder klik wat is hier dan de tekst?</p>
+        <!-- wat wordt de content van de p hierboven als ik op de button hieronder klik? 8 -->
+        <button onclick="rekenen(8);">Bereken, klik op mij!</button>
+        <!-- Welke functie wordt hierboven aangeroepen? rekenen()-->
+        <!-- wat gebeurd er als je het getal 5 hierboven in een ander getal verandert? Dan verandert het getal naar 11 -->
+    </div>
+
+    <div>
+        <p onclick="this.style.color='aqua';">Klik op mij!</p> 
+        <!-- wordt hier een functie aangeroepen? nee -->
+        <!-- wat gebeurd er met de tekst in het element p? De tekst word een andere kleur. -->
+    </div>
+
+    <div>
+        <p onclick="setColor(this, 'orange', '30');">Klik ook op mij!</p> 
+        <!-- wordt hier een functie aangeroepen? nee -->
+        <!-- wat gebeurd er als ik px vergeet bij 30px (probeer het eens) Dan word de tekst niet groter. -->
+    </div>
+    
+</body>
+</html>
